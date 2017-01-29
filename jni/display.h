@@ -7,10 +7,12 @@ public:
 
 	void Update();
 	void isClosed();
+	int getColorValue();
 
 	virtual ~Display();
 protected:
 private:
+	int colorValue;
 	//	Display(const Display& other) {}
 	//	Display& operator=(const Display other) {}
 };

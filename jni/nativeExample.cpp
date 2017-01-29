@@ -110,7 +110,9 @@ void draw_frame(struct engine* engine) {
 		return;
 	}
 
-	glClearColor(255,0,0, 1);
+	Display display(800, 600, "HelloWorld!");
+
+	glClearColor(0, 0, display.getColorValue(), 1);
 	glClear(GL_COLOR_BUFFER_BIT);
 	eglSwapBuffers(engine->display, engine->surface);
 }
@@ -180,7 +182,7 @@ void android_main(struct android_app* state) {
 	app_dummy();
 
 	struct engine engine;
-	Display display(800, 600, "Hello World!");
+	
 
 
 	memset(&engine, 0, sizeof(engine));
