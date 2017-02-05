@@ -1,4 +1,4 @@
-# VRModelViewer
+# NativeActivityAppCreatedFromTerminal
 
 This is an Android project with a native activity and Ant building system written on C++
 
